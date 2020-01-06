@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../../../../docs/img/sprites/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 100em 17em;
+    background-size: 100em 23.8em;
 }
 
 .no-svg .icon:before {
@@ -17,10 +17,46 @@
 
 
 
-  .icon.prikhodkin:before {
+  .icon.fb:before {
       background-position: 0em 0em;
+      width: 0.8em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.inst:before {
+      background-position: 0em -1.6em;
+      width: 1.5em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.pin:before {
+      background-position: 0em -3.2em;
+      width: 1.2em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.prikhodkin:before {
+      background-position: 0em -5em;
       width: 100em;
       height: 16.99208443271768em;
+  }
+
+
+
+
+  .icon.yt:before {
+      background-position: 0em -22em;
+      width: 1.8em;
+      height: 1.8em;
   }
 
 
