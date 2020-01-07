@@ -1,0 +1,49 @@
+.btn {
+  font-family: $nano;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 50px;
+  border: 2px solid #ffffff;
+  border-top: none;
+  padding: 15px 45px;
+  transition: all 0.3s;
+  appearance: none;
+  border-radius: 0;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+  }
+  &:hover {
+    color: $hover-color;
+    border-color: $hover-color;
+    &::before {
+      background-color: $hover-color;
+      width: 70%;
+    }
+    &::after {
+      background-color: $hover-color;
+      width: 10%;
+    }
+  }
+}

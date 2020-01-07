@@ -1,7 +1,7 @@
 .menu__btn {
   position: absolute;
   z-index: 100;
-  top: 20px;
+  top: 21px;
   right: 15px;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -87,5 +87,52 @@
   a {
     color: #ffffff;
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu__btn {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-top: -40px;
+    .social {
+      display: none;
+    }
+    .header__pin {
+      display: none;
+    }
+  }
+
+  .menu__wrapper {
+    position: relative;
+    z-index: unset;
+    background-color: transparent;
+    top: auto;
+    left: auto;
+    padding: 0;
+  }
+
+  .menu__list {
+    border-bottom: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .menu__item {
+    margin-bottom: 0;
+    a {
+      transition: all 0.3s;
+      &:hover {
+        color: $hover-color;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 }

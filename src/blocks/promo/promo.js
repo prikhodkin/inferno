@@ -1,4 +1,4 @@
-const slider = $('.test');
+const slider = $('.promo__list');
 slider
   .on('init', () => {
     mouseWheel(slider);

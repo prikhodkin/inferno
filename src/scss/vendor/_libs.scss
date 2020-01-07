@@ -1,1 +1,48 @@
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
+
+.slick-dots {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .slick-dots {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 100%;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+    button {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 9px;
+      background-color: #dddddd;
+      font-size: 0;
+      border: none;
+      padding: 0;
+      transition: all 0.3s;
+      appearance: none;
+      border-radius: 50%;
+    }
+
+    .slick-active {
+      
+      button {
+        border: 2px solid #dddddd;
+        background-color: transparent;
+        width: 14px;
+        height: 14px;
+        
+      }
+    }
+  }
+}

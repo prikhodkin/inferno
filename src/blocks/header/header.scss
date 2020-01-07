@@ -1,7 +1,11 @@
 .header {
   font-family: $nano;
-  padding: 0 15px;
-  background-color: #000000;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
 }
 
 .header__pin {
@@ -38,5 +42,45 @@
   margin-left: auto;
   img {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__pin {
+    display: flex;
+    color: #ffffff;
+    margin-left: auto;
+  }
+
+  .header__lang {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 45px 30px 50px 30px;
+  }
+
+  .header__logo {
+    position: relative;
+    z-index: 20;
+    top: -15px;
+    width: 125px;
+  }
+
+  .header__top {
+    align-items: flex-start;
+  }
+
+  .header__pin {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .header__lang {
+    width: 40px;
+    margin-right: 0;
+    margin-bottom: 25px;
   }
 }
