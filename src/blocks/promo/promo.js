@@ -9,7 +9,15 @@ slider
     'arrows': false,
     'verticalSwiping': true,
     'infinite': false,
-    'accessibility': false
+    'accessibility': false,
+    'responsive': [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: false
+        }
+      }
+    ]
   });
 
 function mouseWheel(slider) {
@@ -20,8 +28,18 @@ function mouseWheelHandler(event) {
   const slider = event.data.slider;
   const delta = event.originalEvent.deltaY;
   if (delta > 0) {
-    slider.slick('slickPrev');
-  } else {
     slider.slick('slickNext');
+
+  } else {
+    slider.slick('slickPrev');
   }
 }
+
+$('.promo__sub-list').slick({
+  autoplay: true,
+  dots: false,
+  arrows: false,
+  fade: true,
+  pauseOnFocus: false,
+  pauseOnHover: false
+})

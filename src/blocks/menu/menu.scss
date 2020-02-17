@@ -14,6 +14,15 @@
   background-color: transparent;
 }
 
+.menu__icon {
+  width: 26px;
+  height: 26px;
+  stroke: #ffffff;
+  fill: #ffffff;
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+
 .menu__hamburger {
   display: block;
   position: relative;
@@ -85,8 +94,12 @@
 .menu__item {
   margin-bottom: 25px;
   a {
+    display: flex;
+    align-items: center;
     color: #ffffff;
     font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -95,9 +108,11 @@
     display: none;
   }
 
+
+
   .menu {
     display: block;
-    margin-top: -40px;
+    margin-top: -12.1%;
     .social {
       display: none;
     }
@@ -118,6 +133,7 @@
   .menu__list {
     border-bottom: none;
     display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
     margin: 0;
     margin-bottom: 5px;
@@ -126,9 +142,18 @@
   .menu__item {
     margin-bottom: 0;
     a {
+      flex-direction: column;
       transition: all 0.3s;
       &:hover {
         color: $hover-color;
+        .menu__icon {
+          fill: $hover-color;
+          stroke: $hover-color;
+        }
+      }
+      .menu__icon {
+        margin-right: 0;
+        margin-bottom: 28px;
       }
     }
     &:not(:last-child) {

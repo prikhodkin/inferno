@@ -39,7 +39,8 @@ const requireDir = require("require-dir"),
         scriptsLib: {
           src: ['node_modules/jquery/dist/jquery.min.js',
           'node_modules/slick-carousel/slick/slick.min.js',
-          'node_modules/jquery-mousewheel/jquery.mousewheel.js'],
+          'node_modules/jquery-mousewheel/jquery.mousewheel.js',
+        'node_modules/jscrollpane/script/jquery.jscrollpane.js'],
           dest: "./docs/js/"
         },
         sprite: {

@@ -1,0 +1,38 @@
+.breadcrumbs {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .breadcrumbs {
+    display: block;
+  }
+  .breadcrumbs__list {
+    @include list-reset;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .breadcrumbs__item {
+    color: #939393;
+    font-size: 14px;
+    display: flex;
+    line-height: 18px;
+    transition: all 0.3s;
+    &:hover {
+      color: #ffffff;
+    }
+    &:not(:last-child) {
+      &::after {
+        content: "/";
+        display: block;
+        margin: 0 5px;
+      }
+    }
+    &--active {
+      color: #ffffff;
+    }
+    a {
+      color: inherit;
+    }
+  }
+}
