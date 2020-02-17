@@ -106,15 +106,17 @@
   .tickets__bottom {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   .tickets__code {
-    width: 60%;
+    width: 40%;
     margin-right: 30px;
+    color: #ffffff;
   }
 
   .tickets__total {
-    flex-grow: 1;
+    width: 40%;
   }
 
   .tickets {
