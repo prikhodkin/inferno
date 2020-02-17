@@ -143,6 +143,9 @@ p.visitors__off {
     height: 275px;
     iframe {
       border-radius: 50%;
+      .place-card.place-card-medium {
+        display: none;
+      }
     }
     &--big {
       position: fixed;
