@@ -34,7 +34,7 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svg-sprites": "^4.1.2",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-mousewheel": "^3.1.13",
     "jscrollpane": "^2.2.1",
     "node-normalize-scss": "^8.0.1",
